@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<BookHotelData>
+	<TestCase id="TC-10.01">
+		<FirstName></FirstName>
+		<LastName></LastName>
+		<Address></Address>
+
+		<CreditCardNumber></CreditCardNumber>
+		<CreditCardType></CreditCardType>
+		<ExpiryMonth></ExpiryMonth>
+		<ExpiryYear></ExpiryYear>
+		<Cvv></Cvv>
+
+		<ExpectedFirstNameMessage>Please Enter your First Name</ExpectedFirstNameMessage>
+
+		<ExpectedLastNameMessage>Please Enter you Last Name</ExpectedLastNameMessage>
+
+		<ExpectedAddressMessage>Please Enter your Address</ExpectedAddressMessage>
+
+		<ExpectedCreditCardMessage>Please Enter your 16 Digit Credit Card Number</ExpectedCreditCardMessage>
+
+		<ExpectedCardTypeMessage>Please Select your Credit Card Type</ExpectedCardTypeMessage>
+
+		<ExpectedExpiryMessage>Please Select your Credit Card Expiry Month</ExpectedExpiryMessage>
+
+		<ExpectedCvvMessage>Please Enter your Credit Card CVV Number</ExpectedCvvMessage>
+	</TestCase>
+	
+</BookHotelData>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<AppSettings>
+	<ApplicationUrl>https://adactinhotelapp.com/HotelAppBuild2/</ApplicationUrl>
+	<Browser>Chrome</Browser>
+	<Headless>False</Headless>
+	<ExplicitWaitSeconds>60</ExplicitWaitSeconds>
+</AppSettings>

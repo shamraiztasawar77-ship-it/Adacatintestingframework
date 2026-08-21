@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<SearchHotelData>
+
+	<TestCase id="TC-01.01">
+		<Description>Location is not selected</Description>
+
+		<Location></Location>
+		<Hotel>Hotel Creek</Hotel>
+		<RoomType>Standard</RoomType>
+		<NumberOfRooms>2 - Two</NumberOfRooms>
+
+		<CheckInOffsetDays>1</CheckInOffsetDays>
+		<CheckOutOffsetDays>3</CheckOutOffsetDays>
+
+		<AdultsPerRoom>2 - Two</AdultsPerRoom>
+		<ChildrenPerRoom>0 - None</ChildrenPerRoom>
+
+		<ExpectedMessage>Please Select a Location</ExpectedMessage>
+	</TestCase>
+
+	<TestCase id="TC-02.01">
+		<Description>Check-in date is later than check-out date</Description>
+
+		<Location>Sydney</Location>
+		<Hotel>Hotel Creek</Hotel>
+		<RoomType>Standard</RoomType>
+		<NumberOfRooms>1 - One</NumberOfRooms>
+
+		<CheckInOffsetDays>4</CheckInOffsetDays>
+		<CheckOutOffsetDays>0</CheckOutOffsetDays>
+
+		<AdultsPerRoom>2 - Two</AdultsPerRoom>
+		<ChildrenPerRoom>0 - None</ChildrenPerRoom>
+
+		<ExpectedMessage> Check-In Date shall be before than Check-Out Date</ExpectedMessage>
+	</TestCase>
+
+	<TestCase id="TC-03.01">
+		<Description>Check-in date is in the past</Description>
+
+		<Location>Sydney</Location>
+		<Hotel>Hotel Creek</Hotel>
+		<RoomType>Standard</RoomType>
+		<NumberOfRooms>1 - One</NumberOfRooms>
+
+		<CheckInOffsetDays>-4</CheckInOffsetDays>
+		<CheckOutOffsetDays>0</CheckOutOffsetDays>
+
+		<AdultsPerRoom>2 - Two</AdultsPerRoom>
+		<ChildrenPerRoom>0 - None</ChildrenPerRoom>
+
+		<ExpectedMessage>Check-In Date should be either Today or Later Date</ExpectedMessage>
+	</TestCase>
+
+	<TestCase id="TC-04.01">
+		<Description>Check-in and check-out dates are equal</Description>
+
+		<Location>Sydney</Location>
+		<Hotel>Hotel Creek</Hotel>
+		<RoomType>Standard</RoomType>
+		<NumberOfRooms>1 - One</NumberOfRooms>
+
+		<CheckInOffsetDays>2</CheckInOffsetDays>
+		<CheckOutOffsetDays>2</CheckOutOffsetDays>
+
+		<AdultsPerRoom>2 - Two</AdultsPerRoom>
+		<ChildrenPerRoom>0 - None</ChildrenPerRoom>
+
+		<ExpectedMessage>Check-in and Check-out date cannot be same</ExpectedMessage>
+	</TestCase>
+
+	<TestCase id="TC-05.01">
+		<Description>Search criteria are displayed correctly</Description>
+
+		<Location>Sydney</Location>
+		<Hotel>Hotel Creek</Hotel>
+		<RoomType>Standard</RoomType>
+		<NumberOfRooms>2 - Two</NumberOfRooms>
+
+		<CheckInOffsetDays>4</CheckInOffsetDays>
+		<CheckOutOffsetDays>5</CheckOutOffsetDays>
+
+		<AdultsPerRoom>2 - Two</AdultsPerRoom>
+		<ChildrenPerRoom>0 - None</ChildrenPerRoom>
+	</TestCase>
+
+	<TestCase id="TC-06.01">
+		<Description>Reset clears the Search Hotel form</Description>
+
+		<Location>Sydney</Location>
+		<Hotel>Hotel Creek</Hotel>
+		<RoomType>Standard</RoomType>
+		<NumberOfRooms>2 - Two</NumberOfRooms>
+
+		<CheckInOffsetDays>2</CheckInOffsetDays>
+		<CheckOutOffsetDays>6</CheckOutOffsetDays>
+
+		<AdultsPerRoom>2 - Two</AdultsPerRoom>
+		<ChildrenPerRoom>1 - One</ChildrenPerRoom>
+	</TestCase>
+	<TestCase id="TC-08.01">
+		<Description>Valid search for total-price verification</Description>
+		<Location>Sydney</Location>
+		<Hotel>Hotel Creek</Hotel>
+		<RoomType>Standard</RoomType>
+		<NumberOfRooms>2 - Two</NumberOfRooms>
+		<CheckInOffsetDays>4</CheckInOffsetDays>
+		<CheckOutOffsetDays>6</CheckOutOffsetDays>
+		<AdultsPerRoom>2 - Two</AdultsPerRoom>
+		<ChildrenPerRoom>0 - None</ChildrenPerRoom>
+		<expectedhotelname>Hotel Creek</expectedhotelname>
+		<expectedlocation>Sydney</expectedlocation>
+		<ExpectedMessage>Search Hotel (Fields marked with Red asterix (*) are mandatory)</ExpectedMessage>
+	</TestCase>
+
+	<TestCase id="TC-09.01">
+		<Description>Valid search for final-price verification</Description>
+		<Location>Sydney</Location>
+		<Hotel>Hotel Creek</Hotel>
+		<RoomType>Standard</RoomType>
+		<NumberOfRooms>2 - Two</NumberOfRooms>
+		<CheckInOffsetDays>4</CheckInOffsetDays>
+		<CheckOutOffsetDays>6</CheckOutOffsetDays>
+		<AdultsPerRoom>2 - Two</AdultsPerRoom>
+		<ChildrenPerRoom>0 - None</ChildrenPerRoom>
+	</TestCase>
+		<TestCase id="TC-10.01">
+			<Description>
+				Valid search for mandatory booking-field validation
+			</Description>
+
+			<Location>Sydney</Location>
+			<Hotel>Hotel Creek</Hotel>
+			<RoomType>Standard</RoomType>
+			<NumberOfRooms>1 - One</NumberOfRooms>
+
+			<CheckInOffsetDays>1</CheckInOffsetDays>
+			<CheckOutOffsetDays>3</CheckOutOffsetDays>
+
+			<AdultsPerRoom>2 - Two</AdultsPerRoom>
+			<ChildrenPerRoom>0 - None</ChildrenPerRoom>
+		</TestCase>
+		
+
+</SearchHotelData>
