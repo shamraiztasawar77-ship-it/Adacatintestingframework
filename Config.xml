@@ -21,7 +21,7 @@
 		</Step>
 
 		<Step name="Test">
-			<Command>dotnet test --configuration Release --no-build --filter "category= Validation"</Command>
+			<Command>dotnet test --configuration Release --no-build --filter "Category= Validation"</Command>
 		</Step>
 
 	</Steps>
