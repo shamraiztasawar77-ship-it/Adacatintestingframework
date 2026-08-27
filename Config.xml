@@ -8,6 +8,9 @@
 	</Project>
 
 	<Steps>
+		<Step name="Clean">
+			<Command>git clean -fdx</Command>
+		</Step>
 
 		<Step name="Restore">
 			<Command>dotnet restore</Command>
