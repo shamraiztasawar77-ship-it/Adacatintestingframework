@@ -169,9 +169,6 @@ namespace Automationassignment_01.Tests
         [Category("Regression")]
         [Category("Smoke")]
         [Category("E2E")]
-
-
-
         public void TC_18LIFECYCLE()
         {
 

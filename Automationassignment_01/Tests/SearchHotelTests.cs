@@ -9,6 +9,8 @@ namespace Automationassignment_01.Tests
     public sealed class SearchHotelTests : TestBase
     {
         [Test]
+        [Category("Regression")]
+        [Category("Validation")]
         public void TC01_LocationIsMandatory()
         {
             var searchHotelPage = new SearchHotelPage(
@@ -27,6 +29,8 @@ namespace Automationassignment_01.Tests
         }
 
         [Test]
+        [Category("Regression")]
+        [Category("Validation")]
         public void TC02_CheckInDateCannotBeLaterThanCheckOutDate()
         {
             var searchHotelPage = new SearchHotelPage(
@@ -45,6 +49,8 @@ namespace Automationassignment_01.Tests
         }
 
         [Test]
+        [Category("Regression")]
+        [Category("Validation")]
         public void TC03_CheckInDateCannotBeInThePast()
         {
             var searchHotelPage = new SearchHotelPage(
@@ -63,6 +69,8 @@ namespace Automationassignment_01.Tests
         }
 
         [Test]
+        [Category("Regression")]
+        [Category("Validation")]
         public void TC04_CheckInAndCheckOutDatesCannotBeEqual()
         {
             var searchHotelPage = new SearchHotelPage(
@@ -81,6 +89,8 @@ namespace Automationassignment_01.Tests
         }
 
         [Test]
+        [Category("Regression")]
+        [Category("Validation")]
         public void TC05_SearchCriteriaAreDisplayedCorrectly()
         {
             var searchHotelPage = new SearchHotelPage(
@@ -134,6 +144,8 @@ namespace Automationassignment_01.Tests
         }
         
         [Test]
+        [Category("Regression")]
+        [Category("Validation")]
         public void TC06_ResetClearsSearchHotelForm()
         {
             var searchHotelPage = new SearchHotelPage(

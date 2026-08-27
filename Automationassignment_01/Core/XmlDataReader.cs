@@ -17,7 +17,7 @@ namespace Automationassignment_01.Core
             Path.Combine(
                 ConfigurationDirectory,
                 "TestData");
-
+           
         public static string GetAppSetting(
             string elementName)
         {
@@ -89,7 +89,7 @@ namespace Automationassignment_01.Core
                         userId,
                         StringComparison.OrdinalIgnoreCase));
 
-            if (user is null)
+                 if (user is null)
             {
                 throw new InvalidOperationException(
                     $"Login user '{userId}' was not found " +

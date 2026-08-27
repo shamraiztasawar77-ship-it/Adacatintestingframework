@@ -9,6 +9,8 @@ namespace Automationassignment_01.Tests
     public sealed class SelectHotelTests : TestBase
     {
         [Test]
+        [Category("Regression")]
+        [Category("Validation")]
         public void TC07_UserCannotContinueWithoutSelectingHotel()
         {
             var searchHotelPage = new SearchHotelPage(
