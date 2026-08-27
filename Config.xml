@@ -17,7 +17,7 @@
 		</Step>
 
 		<Step name="Build">
-			<Command>dotnet build --configuration Release --no-restore</Command>
+			<Command>dotnet build --configuration Release --no-restore --filter "category= Validation"</Command>
 		</Step>
 
 		<Step name="Test">
