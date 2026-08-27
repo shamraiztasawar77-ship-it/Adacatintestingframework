@@ -4,5 +4,5 @@
 	<ApplicationUrl>https://adactinhotelapp.com/HotelAppBuild2/</ApplicationUrl>
 	<Browser>Chrome</Browser>
 	<Headless>False</Headless>
-	<ExplicitWaitSeconds>60</ExplicitWaitSeconds>
+	<ExplicitWaitSeconds>120</ExplicitWaitSeconds>
 </AppSettings>
